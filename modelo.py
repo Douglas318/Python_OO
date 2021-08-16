@@ -52,7 +52,7 @@ class Playlist:
 vingadores = Filme("vingadores - guerra infinita", 2018, 160)
 atlanta = Serie("atlanta", 2018, 2)
 demolidor = Serie("Demolidor", 2018, 2)
-tdmp = Filme("tdmp", 1998, 160)
+tdmp = Filme("todo mundo em pânico", 1998, 160)
 
 vingadores.dar_likes()
 vingadores.dar_likes()
@@ -65,10 +65,10 @@ atlanta.dar_likes()
 lista = vingadores, atlanta, demolidor, tdmp
 minha_playlist = Playlist('fim de semana', lista)
 
-for programa in minha_playlist.listagem:
+for programa in minha_playlist:
     print(programa)
 
-print(f'Tamanho: {len(minha_playlist.listagem)}')
+print(f'Tamanho da minha Playlist: {len(minha_playlist)}')
 
 pass
 
